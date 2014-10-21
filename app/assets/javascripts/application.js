@@ -14,6 +14,8 @@
 //= require jquery_ujs
 //= require underscore
 //= require backbone
+//= require moment
+//= require jquery.serializejson.min
 //= require news_reader
 //= require_tree ../templates
 //= require_tree ./models

@@ -1,5 +1,6 @@
 <% feeds.forEach( function (feed) { %>
 <li>
-  <a href="<%= feed.escape('url') %>"><%= feed.escape("title") %></a>
+  <a href="/#/feeds/<%= feed.id %>"><%= feed.escape("title") %></a>
+  <button class="delete" data-id="<%= feed.id %>">Delete</button>
 </li>
 <% }) %>
