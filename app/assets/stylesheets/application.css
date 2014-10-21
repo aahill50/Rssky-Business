@@ -11,7 +11,7 @@
  *= require_self
  *= require_tree .
  */
-html, body, h1, h2, ul, li, a, div {
+html, body, h1, h2, ul, li, a, div, button {
   margin: 0;
   padding: 0;
   border: 0;
@@ -36,7 +36,8 @@ li > a:hover {
 }
 
 body {
-  background: #909FDA;
+  background: #1F345C;
+/*  background-image: linear-gradient(to right, #1F345C, #909FDA);*/
   font-family: sans-serif;
 }
 
@@ -49,9 +50,13 @@ header {
 
 header > a {
   position: absolute;
-  top: 15px;
+  top: 20px;
   right: 15px;
   color: #DDD;
+}
+
+header > a:hover {
+  filter: blue(5px);
 }
 
 h1 {
@@ -61,12 +66,12 @@ h1 {
   font-size: 2em;
 }
 
-#content {
+#content, #content2 {
   background: white;
   margin: 0 100px 50px 100px;
   padding: 70px 10px 30px 10px;
   border-radius: 5px;
-  box-shadow: 0 0 2em gold;
+  box-shadow: 0 0 2em #81D5B7;
 }
 
 h2 {
@@ -75,12 +80,12 @@ h2 {
   margin-bottom: 10px;
 }
 
-li:nth-child(even) {
+#content li:nth-child(even) {
   background: #DDD;
 }
 
 li {
-  padding: 5px;
+  padding: 6px 5px;
 }
 
 footer {
@@ -96,8 +101,37 @@ footer {
 
 li > button {
   display: none;
+  font-size: 12px;
+  float: right;
 }
 
 li:hover > button {
   display: inline;
+}
+
+button, input[type=submit], header li > a  {
+/*  float: right;*/
+  background: #1F345C;
+  border: 1px solid #81D5B7;
+  border-radius: 5px;
+  color: #DDD;
+  padding: 2px;
+}
+
+header ul {
+  position: fixed;
+  right: 0;
+  top: 0;
+  font-size: 12px;
+}
+
+input[type=text], input[type=password] {
+  background: #1F345C;
+  color: #DDD;
+  box-shadow: inset 0 0 1em #81D5B7;
+  font-size: 16px;
+}
+
+input[type=text] {
+  width: 300px;
 }

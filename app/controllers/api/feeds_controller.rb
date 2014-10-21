@@ -1,6 +1,8 @@
 class Api::FeedsController < ApplicationController
+  before_filter :ensure_logged_in
+
   def index
-    render :json => Feed.all
+    render :json => current_user.feeds
   end
 
   def show
@@ -8,7 +10,7 @@ class Api::FeedsController < ApplicationController
   end
 
   def create
-    feed = Feed.find_or_create_by_url(feed_params[:url])
+    feed = current_user.feeds.find_or_create_by_url(feed_params[:url])
     if feed
       render :json => feed
     else
@@ -17,10 +19,13 @@ class Api::FeedsController < ApplicationController
   end
 
   def destroy
-    feed = Feed.find(params[:id])
-    feed.destroy
+    feed = current_user.feeds.find(params[:id])
 
-    render json: feed
+    if feed.destroy
+      render json: feed
+    else
+      render text: "STOP THAT!", status: 404
+    end
   end
 
   private

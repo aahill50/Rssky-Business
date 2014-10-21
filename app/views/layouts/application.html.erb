@@ -7,8 +7,21 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+  <header>
+    <h1><a href="#">Rssky Business</a></h1>
+    <ul>
+    <% if logged_in? %>
+      <li><a href="/#/feeds/new">Create New Feed</a></li>
+      <li><%= button_to "Sign Out", session_url, method: :delete %></li>
+    <% else %>
+      <li><%= link_to "Sign Up", new_user_url %></li>
+      <li><%= link_to "Sign In", new_session_url %></li>
+    <% end %>
+    </ul>
+  </header>
 <%= yield %>
-
+  <footer>
+    &copy; 2014 Aaron & Jacob Industries, HELLO <%= current_user ? current_user.email : "is it me you're looking for?"%>
+  </footer>
 </body>
 </html>
