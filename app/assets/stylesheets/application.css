@@ -55,9 +55,6 @@ header > a {
   color: #DDD;
 }
 
-header > a:hover {
-  filter: blue(5px);
-}
 
 h1 {
   background: #2C1339;
