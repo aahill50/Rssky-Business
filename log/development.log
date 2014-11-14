@@ -37070,3 +37070,597 @@ Processing by SessionsController#new as JSON
   [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
   [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
 Completed 200 OK in 28ms (Views: 27.7ms | ActiveRecord: 0.2ms)
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from service at /Users/aaron/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 17:39:53 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+Redirected to http://localhost:3000/session/new
+Filter chain halted as :ensure_logged_in rendered or redirected
+Completed 302 Found in 13ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2014-11-10 17:39:53 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+Completed 200 OK in 294ms (Views: 288.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/moment.js?body=1" for 127.0.0.1 at 2014-11-10 17:39:54 -0500
+
+
+Started GET "/assets/jquery.serializejson.min.js?body=1" for 127.0.0.1 at 2014-11-10 17:39:54 -0500
+
+
+Started GET "/assets/feeds/_entry.js?body=1" for 127.0.0.1 at 2014-11-10 17:39:54 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 17:39:54 -0500
+
+
+Started GET "/assets/feeds/create.js?body=1" for 127.0.0.1 at 2014-11-10 17:39:54 -0500
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2014-11-10 17:39:54 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 17:39:54 -0500
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2014-11-10 17:39:54 -0500
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2014-11-10 17:39:54 -0500
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2014-11-10 17:39:54 -0500
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2014-11-10 17:39:54 -0500
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2014-11-10 17:39:54 -0500
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2014-11-10 17:39:54 -0500
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2014-11-10 17:39:54 -0500
+
+
+Started GET "/assets/views/entry_show.js?body=1" for 127.0.0.1 at 2014-11-10 17:39:54 -0500
+
+
+Started GET "/assets/views/feed_create.js?body=1" for 127.0.0.1 at 2014-11-10 17:39:54 -0500
+
+
+Started GET "/assets/views/feed_show.js?body=1" for 127.0.0.1 at 2014-11-10 17:39:54 -0500
+
+
+Started GET "/assets/views/feeds_index.js?body=1" for 127.0.0.1 at 2014-11-10 17:39:54 -0500
+
+
+Started GET "/assets/routers/feeds_router.js?body=1" for 127.0.0.1 at 2014-11-10 17:39:54 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 17:39:54 -0500
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-11-10 17:39:54 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 17:39:54 -0500
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2014-11-10 17:39:54 -0500
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2014-11-10 17:39:54 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 17:39:54 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 17:39:54 -0500
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2014-11-10 17:39:54 -0500
+Processing by Api::FeedsController#index as JSON
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/session/new
+Filter chain halted as :ensure_logged_in rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2014-11-10 17:39:54 -0500
+Processing by SessionsController#new as JSON
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2014-11-10 17:40:07 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.7ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 17:40:07 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 17:40:07 -0500
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2014-11-10 17:40:07 -0500
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2014-11-10 17:40:07 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 17:40:07 -0500
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-11-10 17:40:07 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 17:40:07 -0500
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2014-11-10 17:40:07 -0500
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2014-11-10 17:40:07 -0500
+Processing by Api::FeedsController#index as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+Redirected to http://localhost:3000/session/new
+Filter chain halted as :ensure_logged_in rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2014-11-10 17:40:07 -0500
+Processing by SessionsController#new as JSON
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+Completed 200 OK in 28ms (Views: 27.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-11-10 17:40:21 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 17:40:21 -0500
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2014-11-10 17:40:21 -0500
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2014-11-10 17:40:21 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 17:40:21 -0500
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-11-10 17:40:21 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 17:40:21 -0500
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2014-11-10 17:40:21 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 17:40:21 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 17:40:21 -0500
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2014-11-10 17:40:21 -0500
+Processing by Api::FeedsController#index as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/session/new
+Filter chain halted as :ensure_logged_in rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2014-11-10 17:40:21 -0500
+Processing by SessionsController#new as JSON
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-11-10 17:40:27 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"jeMi7ORb2NC290ncOViAdGl26B5Xu1UlmFy5hhDYx/4=", "user"=>{"email"=>"aahill50@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (8.5ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "password_digest", "session_token", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Nov 2014 22:40:27 UTC +00:00], ["email", "aahill50@gmail.com"], ["password_digest", "$2a$10$NDoaBEkaoaRrMFy3zp1gGeZjzwrupwrkjJXKOsbJ.PqFNUaEeiKj2"], ["session_token", "_slv8DiVsEspGdxjX20e4A"], ["updated_at", Mon, 10 Nov 2014 22:40:27 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "session_token" = ?, "updated_at" = ? WHERE "users"."id" = 4  [["session_token", "keacrrD38-T4zE8PnNou1w"], ["updated_at", Mon, 10 Nov 2014 22:40:27 UTC +00:00]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 138ms (ActiveRecord: 11.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 17:40:27 -0500
+Processing by StaticPagesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'keacrrD38-T4zE8PnNou1w' LIMIT 1
+  Rendered static_pages/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2014-11-10 17:40:27 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 17:40:27 -0500
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2014-11-10 17:40:27 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 17:40:27 -0500
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2014-11-10 17:40:27 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 17:40:27 -0500
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-11-10 17:40:27 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 17:40:27 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 17:40:27 -0500
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2014-11-10 17:40:27 -0500
+Processing by Api::FeedsController#index as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'keacrrD38-T4zE8PnNou1w' LIMIT 1[0m
+  [1m[35mFeed Load (0.7ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."user_id" = ?  [["user_id", 4]]
+Completed 200 OK in 65ms (Views: 1.2ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/api/feeds" for 127.0.0.1 at 2014-11-10 17:41:03 -0500
+Processing by Api::FeedsController#create as JSON
+  Parameters: {"feed"=>{"url"=>"http://www.npr.org/rss/rss.php?id=1008"}}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'keacrrD38-T4zE8PnNou1w' LIMIT 1[0m
+  [1m[35mFeed Load (0.6ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."user_id" = ? AND "feeds"."url" = 'http://www.npr.org/rss/rss.php?id=1008' LIMIT 1  [["user_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `title`
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "feeds" ("created_at", "title", "updated_at", "url", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 10 Nov 2014 22:41:05 UTC +00:00], ["title", "Arts &amp; Life"], ["updated_at", Mon, 10 Nov 2014 22:41:05 UTC +00:00], ["url", "http://www.npr.org/rss/rss.php?id=1008"], ["user_id", 4]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Nov 2014 22:41:05 UTC +00:00], ["feed_id", 8], ["guid", "http://www.npr.org/blogs/thesalt/2014/11/10/363052805/sandwich-monday-the-dunkin-donuts-cronut?utm_medium=RSS&amp;utm_campaign=artslife"], ["json", "{\"title\":\"Sandwich Monday: The Dunkin' Donuts Cronut\",\"link\":\"http://www.npr.org/blogs/thesalt/2014/11/10/363052805/sandwich-monday-the-dunkin-donuts-cronut?utm_medium=RSS\\u0026amp;utm_campaign=artslife\",\"description\":\"This week, we try a mass-produced version of New York City's famous Cronut, the croissant-doughnut hybrid. The real failure here is that Dunkin' Donuts didn't call it a Crunkin' Cronut.\",\"content_encoded\":\"\\u003Cp\\u003EThis week, we try a mass-produced version of New York City's famous Cronut, the croissant-doughnut hybrid. The real failure here is that Dunkin' Donuts didn't call it a Crunkin' Cronut.\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=363052805\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2014-11-10T14:08:00-05:00\",\"guid\":\"http://www.npr.org/blogs/thesalt/2014/11/10/363052805/sandwich-monday-the-dunkin-donuts-cronut?utm_medium=RSS\\u0026amp;utm_campaign=artslife\",\"dc_creator\":\"Ian Chillag\"}"], ["link", "http://www.npr.org/blogs/thesalt/2014/11/10/363052805/sandwich-monday-the-dunkin-donuts-cronut?utm_medium=RSS&amp;utm_campaign=artslife"], ["published_at", Mon, 10 Nov 2014 19:08:00 UTC +00:00], ["title", "Sandwich Monday: The Dunkin' Donuts Cronut"], ["updated_at", Mon, 10 Nov 2014 22:41:05 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 10 Nov 2014 22:41:05 UTC +00:00], ["feed_id", 8], ["guid", "http://www.npr.org/blogs/monkeysee/2014/11/10/363050484/dont-leave-me-hanging-on-difference-high-fives-and-podcasts?utm_medium=RSS&amp;utm_campaign=artslife"], ["json", "{\"title\":\"Don't Leave Me Hanging: On Difference, High-Fives, And Podcasts\",\"link\":\"http://www.npr.org/blogs/monkeysee/2014/11/10/363050484/dont-leave-me-hanging-on-difference-high-fives-and-podcasts?utm_medium=RSS\\u0026amp;utm_campaign=artslife\",\"description\":\"A fresh episode of a popular podcast breathes in a little new air and provokes some thought about who's heard and not heard, and who's listening.\",\"content_encoded\":\"\\u003Cp\\u003EA fresh episode of a popular podcast breathes in a little new air and provokes some thought about who's heard and not heard, and who's listening.\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=363050484\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2014-11-10T14:02:40-05:00\",\"guid\":\"http://www.npr.org/blogs/monkeysee/2014/11/10/363050484/dont-leave-me-hanging-on-difference-high-fives-and-podcasts?utm_medium=RSS\\u0026amp;utm_campaign=artslife\",\"dc_creator\":\"Linda Holmes\"}"], ["link", "http://www.npr.org/blogs/monkeysee/2014/11/10/363050484/dont-leave-me-hanging-on-difference-high-fives-and-podcasts?utm_medium=RSS&amp;utm_campaign=artslife"], ["published_at", Mon, 10 Nov 2014 19:02:40 UTC +00:00], ["title", "Don't Leave Me Hanging: On Difference, High-Fives, And Podcasts"], ["updated_at", Mon, 10 Nov 2014 22:41:05 UTC +00:00]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Nov 2014 22:41:05 UTC +00:00], ["feed_id", 8], ["guid", "http://www.npr.org/2014/11/10/362035329/superstorm-sandy-inspires-bleak-poetic-landscapes-in-let-me-be-frank?utm_medium=RSS&amp;utm_campaign=artslife"], ["json", "{\"title\":\"Superstorm Sandy Inspires Bleak, Poetic Landscapes In 'Let Me Be Frank'\",\"link\":\"http://www.npr.org/2014/11/10/362035329/superstorm-sandy-inspires-bleak-poetic-landscapes-in-let-me-be-frank?utm_medium=RSS\\u0026amp;utm_campaign=artslife\",\"description\":\"In Richard Ford's brilliant collection of four short stories, protagonist Frank Bascombe returns to be \\\"frank\\\" about touchy topics. His awareness, particularly of mortality, is profound and hilarious.\",\"content_encoded\":\"\\u003Cp\\u003EIn Richard Ford's brilliant collection of four short stories, protagonist Frank Bascombe returns to be \\\"frank\\\" about touchy topics. His awareness, particularly of mortality, is profound and hilarious.\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=362035329\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2014-11-10T13:57:00-05:00\",\"guid\":\"http://www.npr.org/2014/11/10/362035329/superstorm-sandy-inspires-bleak-poetic-landscapes-in-let-me-be-frank?utm_medium=RSS\\u0026amp;utm_campaign=artslife\",\"dc_creator\":\"Maureen Corrigan\"}"], ["link", "http://www.npr.org/2014/11/10/362035329/superstorm-sandy-inspires-bleak-poetic-landscapes-in-let-me-be-frank?utm_medium=RSS&amp;utm_campaign=artslife"], ["published_at", Mon, 10 Nov 2014 18:57:00 UTC +00:00], ["title", "Superstorm Sandy Inspires Bleak, Poetic Landscapes In 'Let Me Be Frank'"], ["updated_at", Mon, 10 Nov 2014 22:41:05 UTC +00:00]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 10 Nov 2014 22:41:05 UTC +00:00], ["feed_id", 8], ["guid", "http://www.npr.org/blogs/thetwo-way/2014/11/10/363012524/book-news-pbs-promises-olympic-style-coverage-of-miami-book-fair?utm_medium=RSS&amp;utm_campaign=artslife"], ["json", "{\"title\":\"Book News: PBS Promises 'Olympic-Style' Coverage Of Miami Book Fair\",\"link\":\"http://www.npr.org/blogs/thetwo-way/2014/11/10/363012524/book-news-pbs-promises-olympic-style-coverage-of-miami-book-fair?utm_medium=RSS\\u0026amp;utm_campaign=artslife\",\"description\":\"The network will feature the massive festival, which boasts hundreds of authors and countless more attendees, in a live webcast. Across the Atlantic, \\u0026lt;em\\u0026gt;The Hunger Games\\u0026lt;/em\\u0026gt; is getting a theater adaptation.\",\"content_encoded\":\"\\u003Cp\\u003EThe network will feature the massive festival, which boasts hundreds of authors and countless more attendees, in a live webcast. Across the Atlantic, \\u003Cem\\u003EThe Hunger Games\\u003C/em\\u003E is getting a theater adaptation.\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=363012524\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2014-11-10T10:06:00-05:00\",\"guid\":\"http://www.npr.org/blogs/thetwo-way/2014/11/10/363012524/book-news-pbs-promises-olympic-style-coverage-of-miami-book-fair?utm_medium=RSS\\u0026amp;utm_campaign=artslife\",\"dc_creator\":\"Colin Dwyer\"}"], ["link", "http://www.npr.org/blogs/thetwo-way/2014/11/10/363012524/book-news-pbs-promises-olympic-style-coverage-of-miami-book-fair?utm_medium=RSS&amp;utm_campaign=artslife"], ["published_at", Mon, 10 Nov 2014 15:06:00 UTC +00:00], ["title", "Book News: PBS Promises 'Olympic-Style' Coverage Of Miami Book Fair"], ["updated_at", Mon, 10 Nov 2014 22:41:05 UTC +00:00]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Nov 2014 22:41:05 UTC +00:00], ["feed_id", 8], ["guid", "http://www.npr.org/blogs/monkeysee/2014/11/10/362992138/start-your-day-right-with-the-stupendous-andre-braugher?utm_medium=RSS&amp;utm_campaign=artslife"], ["json", "{\"title\":\"'Brooklyn Nine-Nine' Hits A Home Run With The Stupendous Andre Braugher\",\"link\":\"http://www.npr.org/blogs/monkeysee/2014/11/10/362992138/start-your-day-right-with-the-stupendous-andre-braugher?utm_medium=RSS\\u0026amp;utm_campaign=artslife\",\"description\":\"Sunday night's \\u0026lt;em\\u0026gt;Brooklyn Nine-Nine \\u0026lt;/em\\u0026gt;gave star Andre Braugher a moment of pure comedic joy-genius.\",\"content_encoded\":\"\\u003Cp\\u003ESunday night's \\u003Cem\\u003EBrooklyn Nine-Nine \\u003C/em\\u003Egave star Andre Braugher a moment of pure comedic joy-genius.\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=362992138\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2014-11-10T08:35:00-05:00\",\"guid\":\"http://www.npr.org/blogs/monkeysee/2014/11/10/362992138/start-your-day-right-with-the-stupendous-andre-braugher?utm_medium=RSS\\u0026amp;utm_campaign=artslife\",\"dc_creator\":\"Linda Holmes\"}"], ["link", "http://www.npr.org/blogs/monkeysee/2014/11/10/362992138/start-your-day-right-with-the-stupendous-andre-braugher?utm_medium=RSS&amp;utm_campaign=artslife"], ["published_at", Mon, 10 Nov 2014 13:35:00 UTC +00:00], ["title", "'Brooklyn Nine-Nine' Hits A Home Run With The Stupendous Andre Braugher"], ["updated_at", Mon, 10 Nov 2014 22:41:05 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 10 Nov 2014 22:41:05 UTC +00:00], ["feed_id", 8], ["guid", "http://www.npr.org/2014/11/10/361394145/if-literatures-great-characters-could-text-theyd-charm-your-pantalets-off?utm_medium=RSS&amp;utm_campaign=artslife"], ["json", "{\"title\":\"If Literature's Great Characters Could Text, They'd Charm Your Pantalets Off\",\"link\":\"http://www.npr.org/2014/11/10/361394145/if-literatures-great-characters-could-text-theyd-charm-your-pantalets-off?utm_medium=RSS\\u0026amp;utm_campaign=artslife\",\"description\":\"\\u0026lt;em\\u0026gt;Texts from Jane Eyre\\u0026lt;/em\\u0026gt; imagines a Mr. Rochester who worries over his \\\"attic wife\\\" and a super flirty Scarlett O'Hara: \\\"did you know that pantalets are out this year[?] that's why I'm not wearing any :)\\\"\",\"content_encoded\":\"\\u003Cp\\u003E\\u003Cem\\u003ETexts from Jane Eyre\\u003C/em\\u003E imagines a Mr. Rochester who worries over his \\\"attic wife\\\" and a super flirty Scarlett O'Hara: \\\"did you know that pantalets are out this year[?] that's why I'm not wearing any :)\\\"\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=361394145\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2014-11-10T03:05:00-05:00\",\"guid\":\"http://www.npr.org/2014/11/10/361394145/if-literatures-great-characters-could-text-theyd-charm-your-pantalets-off?utm_medium=RSS\\u0026amp;utm_campaign=artslife\",\"dc_creator\":\"Neda Ulaby\"}"], ["link", "http://www.npr.org/2014/11/10/361394145/if-literatures-great-characters-could-text-theyd-charm-your-pantalets-off?utm_medium=RSS&amp;utm_campaign=artslife"], ["published_at", Mon, 10 Nov 2014 08:05:00 UTC +00:00], ["title", "If Literature's Great Characters Could Text, They'd Charm Your Pantalets Off"], ["updated_at", Mon, 10 Nov 2014 22:41:05 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Nov 2014 22:41:05 UTC +00:00], ["feed_id", 8], ["guid", "http://www.npr.org/2014/11/10/362280927/whether-green-with-envy-or-tickled-pink-we-live-in-a-color-coded-world?utm_medium=RSS&amp;utm_campaign=artslife"], ["json", "{\"title\":\"Whether Green With Envy Or Tickled Pink, We Live In A Color-Coded World\",\"link\":\"http://www.npr.org/2014/11/10/362280927/whether-green-with-envy-or-tickled-pink-we-live-in-a-color-coded-world?utm_medium=RSS\\u0026amp;utm_campaign=artslife\",\"description\":\"Red means stop; green means go. You live in a red state or a blue state. Elizabeth Blair kicks off NPR's color series with a look at the way color organizes our lives — in ways we don't even realize.\",\"content_encoded\":\"\\u003Cp\\u003ERed means stop; green means go. You live in a red state or a blue state. Elizabeth Blair kicks off NPR's color series with a look at the way color organizes our lives — in ways we don't even realize.\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=362280927\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2014-11-10T03:02:00-05:00\",\"guid\":\"http://www.npr.org/2014/11/10/362280927/whether-green-with-envy-or-tickled-pink-we-live-in-a-color-coded-world?utm_medium=RSS\\u0026amp;utm_campaign=artslife\",\"dc_creator\":\"Elizabeth Blair\"}"], ["link", "http://www.npr.org/2014/11/10/362280927/whether-green-with-envy-or-tickled-pink-we-live-in-a-color-coded-world?utm_medium=RSS&amp;utm_campaign=artslife"], ["published_at", Mon, 10 Nov 2014 08:02:00 UTC +00:00], ["title", "Whether Green With Envy Or Tickled Pink, We Live In A Color-Coded World"], ["updated_at", Mon, 10 Nov 2014 22:41:05 UTC +00:00]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 10 Nov 2014 22:41:05 UTC +00:00], ["feed_id", 8], ["guid", "http://www.npr.org/2014/11/09/361746282/a-3-star-general-explains-why-we-lost-in-iraq-afghanistan?utm_medium=RSS&amp;utm_campaign=artslife"], ["json", "{\"title\":\"A 3-Star General Explains 'Why We Lost' In Iraq, Afghanistan\",\"link\":\"http://www.npr.org/2014/11/09/361746282/a-3-star-general-explains-why-we-lost-in-iraq-afghanistan?utm_medium=RSS\\u0026amp;utm_campaign=artslife\",\"description\":\"In his new book, a former Army lieutenant general compares the war on terrorism to Alcoholics Anonymous: \\\"Step one is admitting you have a problem.\\\"\",\"content_encoded\":\"\\u003Cp\\u003EIn his new book, a former Army lieutenant general compares the war on terrorism to Alcoholics Anonymous: \\\"Step one is admitting you have a problem.\\\"\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=361746282\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2014-11-09T17:22:00-05:00\",\"guid\":\"http://www.npr.org/2014/11/09/361746282/a-3-star-general-explains-why-we-lost-in-iraq-afghanistan?utm_medium=RSS\\u0026amp;utm_campaign=artslife\",\"dc_creator\":\"NPR Staff\"}"], ["link", "http://www.npr.org/2014/11/09/361746282/a-3-star-general-explains-why-we-lost-in-iraq-afghanistan?utm_medium=RSS&amp;utm_campaign=artslife"], ["published_at", Sun, 09 Nov 2014 22:22:00 UTC +00:00], ["title", "A 3-Star General Explains 'Why We Lost' In Iraq, Afghanistan"], ["updated_at", Mon, 10 Nov 2014 22:41:05 UTC +00:00]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Nov 2014 22:41:05 UTC +00:00], ["feed_id", 8], ["guid", "http://www.npr.org/2014/11/09/362828941/remembering-hedy-lamarr-actress-weapons-systems-developer?utm_medium=RSS&amp;utm_campaign=artslife"], ["json", "{\"title\":\"Remembering Hedy Lamarr: Actress, Weapons Systems Developer\",\"link\":\"http://www.npr.org/2014/11/09/362828941/remembering-hedy-lamarr-actress-weapons-systems-developer?utm_medium=RSS\\u0026amp;utm_campaign=artslife\",\"description\":\"Renaissance woman Hedy Lamarr was born on this day 100 years ago. Not only was she a major screen actress, she was also an inventor. NPR's Karen Grigsby Bates speaks with Lamarr biographer Richard Rhodes.\",\"content_encoded\":\"\\u003Cp\\u003ERenaissance woman Hedy Lamarr was born on this day 100 years ago. Not only was she a major screen actress, she was also an inventor. NPR's Karen Grigsby Bates speaks with Lamarr biographer Richard Rhodes.\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=362828941\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2014-11-09T16:53:00-05:00\",\"guid\":\"http://www.npr.org/2014/11/09/362828941/remembering-hedy-lamarr-actress-weapons-systems-developer?utm_medium=RSS\\u0026amp;utm_campaign=artslife\"}"], ["link", "http://www.npr.org/2014/11/09/362828941/remembering-hedy-lamarr-actress-weapons-systems-developer?utm_medium=RSS&amp;utm_campaign=artslife"], ["published_at", Sun, 09 Nov 2014 21:53:00 UTC +00:00], ["title", "Remembering Hedy Lamarr: Actress, Weapons Systems Developer"], ["updated_at", Mon, 10 Nov 2014 22:41:05 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 10 Nov 2014 22:41:05 UTC +00:00], ["feed_id", 8], ["guid", "http://www.npr.org/2014/11/09/362328749/james-earl-jones-from-stutterer-to-janitor-to-broadway-star?utm_medium=RSS&amp;utm_campaign=artslife"], ["json", "{\"title\":\"James Earl Jones: From Stutterer To Janitor To Broadway Star\",\"link\":\"http://www.npr.org/2014/11/09/362328749/james-earl-jones-from-stutterer-to-janitor-to-broadway-star?utm_medium=RSS\\u0026amp;utm_campaign=artslife\",\"description\":\"The 83-year-old was once a farm kid who didn't want to talk. Today, the unmistakable stage and screen actor (not to mention the voice of Darth Vader) still calls himself a \\\"journeyman actor.\\\"\",\"content_encoded\":\"\\u003Cp\\u003EThe 83-year-old was once a farm kid who didn't want to talk. Today, the unmistakable stage and screen actor (not to mention the voice of Darth Vader) still calls himself a \\\"journeyman actor.\\\"\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=362328749\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2014-11-09T16:53:00-05:00\",\"guid\":\"http://www.npr.org/2014/11/09/362328749/james-earl-jones-from-stutterer-to-janitor-to-broadway-star?utm_medium=RSS\\u0026amp;utm_campaign=artslife\",\"dc_creator\":\"NPR Staff\"}"], ["link", "http://www.npr.org/2014/11/09/362328749/james-earl-jones-from-stutterer-to-janitor-to-broadway-star?utm_medium=RSS&amp;utm_campaign=artslife"], ["published_at", Sun, 09 Nov 2014 21:53:00 UTC +00:00], ["title", "James Earl Jones: From Stutterer To Janitor To Broadway Star"], ["updated_at", Mon, 10 Nov 2014 22:41:05 UTC +00:00]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Nov 2014 22:41:05 UTC +00:00], ["feed_id", 8], ["guid", "http://www.npr.org/2014/11/09/361745192/the-black-horn-blowing-past-classical-musics-color-barriers?utm_medium=RSS&amp;utm_campaign=artslife"], ["json", "{\"title\":\"'The Black Horn': Blowing Past Classical Music's Color Barriers\",\"link\":\"http://www.npr.org/2014/11/09/361745192/the-black-horn-blowing-past-classical-musics-color-barriers?utm_medium=RSS\\u0026amp;utm_campaign=artslife\",\"description\":\"Robert Lee Watt, the first black French horn player to join a major U.S. symphony, spent 37 years with the LA Philharmonic. He faced a lot of resistance along the way, as his new memoir recounts.\",\"content_encoded\":\"\\u003Cp\\u003ERobert Lee Watt, the first black French horn player to join a major U.S. symphony, spent 37 years with the LA Philharmonic. He faced a lot of resistance along the way, as his new memoir recounts.\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=361745192\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2014-11-09T16:53:00-05:00\",\"guid\":\"http://www.npr.org/2014/11/09/361745192/the-black-horn-blowing-past-classical-musics-color-barriers?utm_medium=RSS\\u0026amp;utm_campaign=artslife\",\"dc_creator\":\"NPR Staff\"}"], ["link", "http://www.npr.org/2014/11/09/361745192/the-black-horn-blowing-past-classical-musics-color-barriers?utm_medium=RSS&amp;utm_campaign=artslife"], ["published_at", Sun, 09 Nov 2014 21:53:00 UTC +00:00], ["title", "'The Black Horn': Blowing Past Classical Music's Color Barriers"], ["updated_at", Mon, 10 Nov 2014 22:41:05 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 10 Nov 2014 22:41:05 UTC +00:00], ["feed_id", 8], ["guid", "http://www.npr.org/blogs/thesalt/2014/11/09/362357358/inhalable-chocolate-ingestible-ideas-from-a-lab-for-the-senses?utm_medium=RSS&amp;utm_campaign=artslife"], ["json", "{\"title\":\"Inhalable Chocolate? Ingestible Ideas From A Lab For The Senses\",\"link\":\"http://www.npr.org/blogs/thesalt/2014/11/09/362357358/inhalable-chocolate-ingestible-ideas-from-a-lab-for-the-senses?utm_medium=RSS\\u0026amp;utm_campaign=artslife\",\"description\":\"A real-life Willy Wonka invites scientists, designers, composers, artists and chefs to collaborate on novel foods and other cultural confections.\",\"content_encoded\":\"\\u003Cp\\u003EA real-life Willy Wonka invites scientists, designers, composers, artists and chefs to collaborate on novel foods and other cultural confections.\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=362357358\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2014-11-09T11:22:00-05:00\",\"guid\":\"http://www.npr.org/blogs/thesalt/2014/11/09/362357358/inhalable-chocolate-ingestible-ideas-from-a-lab-for-the-senses?utm_medium=RSS\\u0026amp;utm_campaign=artslife\",\"dc_creator\":\"Andrea Shea\"}"], ["link", "http://www.npr.org/blogs/thesalt/2014/11/09/362357358/inhalable-chocolate-ingestible-ideas-from-a-lab-for-the-senses?utm_medium=RSS&amp;utm_campaign=artslife"], ["published_at", Sun, 09 Nov 2014 16:22:00 UTC +00:00], ["title", "Inhalable Chocolate? Ingestible Ideas From A Lab For The Senses"], ["updated_at", Mon, 10 Nov 2014 22:41:05 UTC +00:00]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Nov 2014 22:41:05 UTC +00:00], ["feed_id", 8], ["guid", "http://www.npr.org/blogs/codeswitch/2014/11/09/362401259/is-america-ready-to-fall-in-love-with-the-telenovela?utm_medium=RSS&amp;utm_campaign=artslife"], ["json", "{\"title\":\"Is America Ready To Fall In Love With The Telenovela?\",\"link\":\"http://www.npr.org/blogs/codeswitch/2014/11/09/362401259/is-america-ready-to-fall-in-love-with-the-telenovela?utm_medium=RSS\\u0026amp;utm_campaign=artslife\",\"description\":\"The CW took a big risk when it adapted a Venezuelan \\u0026lt;em\\u0026gt;telenovela\\u0026lt;/em\\u0026gt; for American prime time. Now, \\u0026lt;em\\u0026gt;Jane The Virgin\\u0026lt;/em\\u0026gt; is being renewed for a second season.\",\"content_encoded\":\"\\u003Cp\\u003EThe CW took a big risk when it adapted a Venezuelan \\u003Cem\\u003Etelenovela\\u003C/em\\u003E for American prime time. Now, \\u003Cem\\u003EJane The Virgin\\u003C/em\\u003E is being renewed for a second season.\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=362401259\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2014-11-09T10:18:00-05:00\",\"guid\":\"http://www.npr.org/blogs/codeswitch/2014/11/09/362401259/is-america-ready-to-fall-in-love-with-the-telenovela?utm_medium=RSS\\u0026amp;utm_campaign=artslife\",\"dc_creator\":\"Brenda Salinas\"}"], ["link", "http://www.npr.org/blogs/codeswitch/2014/11/09/362401259/is-america-ready-to-fall-in-love-with-the-telenovela?utm_medium=RSS&amp;utm_campaign=artslife"], ["published_at", Sun, 09 Nov 2014 15:18:00 UTC +00:00], ["title", "Is America Ready To Fall In Love With The Telenovela?"], ["updated_at", Mon, 10 Nov 2014 22:41:05 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 10 Nov 2014 22:41:05 UTC +00:00], ["feed_id", 8], ["guid", "http://www.npr.org/2014/11/09/362358578/imagining-lives-that-might-have-happened-in-end-of-days?utm_medium=RSS&amp;utm_campaign=artslife"], ["json", "{\"title\":\"Imagining Lives That Might Have Happened In 'End Of Days'\",\"link\":\"http://www.npr.org/2014/11/09/362358578/imagining-lives-that-might-have-happened-in-end-of-days?utm_medium=RSS\\u0026amp;utm_campaign=artslife\",\"description\":\"German author Jenny Erpenbeck's new novel grapples with the classic question: What if? What if one choice, one event goes differently, and the whole course of your life changes?\",\"content_encoded\":\"\\u003Cp\\u003EGerman author Jenny Erpenbeck's new novel grapples with the classic question: What if? What if one choice, one event goes differently, and the whole course of your life changes?\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=362358578\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2014-11-09T07:45:00-05:00\",\"guid\":\"http://www.npr.org/2014/11/09/362358578/imagining-lives-that-might-have-happened-in-end-of-days?utm_medium=RSS\\u0026amp;utm_campaign=artslife\",\"dc_creator\":\"NPR Staff\"}"], ["link", "http://www.npr.org/2014/11/09/362358578/imagining-lives-that-might-have-happened-in-end-of-days?utm_medium=RSS&amp;utm_campaign=artslife"], ["published_at", Sun, 09 Nov 2014 12:45:00 UTC +00:00], ["title", "Imagining Lives That Might Have Happened In 'End Of Days'"], ["updated_at", Mon, 10 Nov 2014 22:41:05 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Nov 2014 22:41:05 UTC +00:00], ["feed_id", 8], ["guid", "http://www.npr.org/2014/11/09/360189482/will-selfs-shark-swims-in-a-chaotic-sea?utm_medium=RSS&amp;utm_campaign=artslife"], ["json", "{\"title\":\"Will Self's 'Shark' Swims In A Chaotic Sea\",\"link\":\"http://www.npr.org/2014/11/09/360189482/will-selfs-shark-swims-in-a-chaotic-sea?utm_medium=RSS\\u0026amp;utm_campaign=artslife\",\"description\":\"Featuring the same time frame and some of the same characters as his last novel, \\u0026lt;em\\u0026gt;Umbrella\\u0026lt;/em\\u0026gt;, \\u0026lt;em\\u0026gt;Shark\\u0026lt;/em\\u0026gt; continues Self's modernist exploration of the human psyche and the violence done by modern society.\",\"content_encoded\":\"\\u003Cp\\u003EFeaturing the same time frame and some of the same characters as his last novel, \\u003Cem\\u003EUmbrella\\u003C/em\\u003E, \\u003Cem\\u003EShark\\u003C/em\\u003E continues Self's modernist exploration of the human psyche and the violence done by modern society.\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=360189482\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2014-11-09T05:41:36-05:00\",\"guid\":\"http://www.npr.org/2014/11/09/360189482/will-selfs-shark-swims-in-a-chaotic-sea?utm_medium=RSS\\u0026amp;utm_campaign=artslife\",\"dc_creator\":\"J.P. O'Malley\"}"], ["link", "http://www.npr.org/2014/11/09/360189482/will-selfs-shark-swims-in-a-chaotic-sea?utm_medium=RSS&amp;utm_campaign=artslife"], ["published_at", Sun, 09 Nov 2014 10:41:36 UTC +00:00], ["title", "Will Self's 'Shark' Swims In A Chaotic Sea"], ["updated_at", Mon, 10 Nov 2014 22:41:05 UTC +00:00]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Completed 200 OK in 1584ms (Views: 0.4ms | ActiveRecord: 32.9ms)
+
+
+Started POST "/api/feeds" for 127.0.0.1 at 2014-11-10 17:41:18 -0500
+Processing by Api::FeedsController#create as JSON
+  Parameters: {"feed"=>{"url"=>"http://www.npr.org/rss/rss.php?id=1021"}}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'keacrrD38-T4zE8PnNou1w' LIMIT 1[0m
+  [1m[35mFeed Load (0.2ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."user_id" = ? AND "feeds"."url" = 'http://www.npr.org/rss/rss.php?id=1021' LIMIT 1  [["user_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `title`
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "feeds" ("created_at", "title", "updated_at", "url", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 10 Nov 2014 22:41:19 UTC +00:00], ["title", "Stories from NPR"], ["updated_at", Mon, 10 Nov 2014 22:41:19 UTC +00:00], ["url", "http://www.npr.org/rss/rss.php?id=1021"], ["user_id", 4]]
+  [1m[36m (9.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Nov 2014 22:41:19 UTC +00:00], ["feed_id", 9], ["guid", "http://www.npr.org/blogs/money/2014/11/10/363103753/textbook-arbitrage-making-money-off-used-books?utm_medium=RSS&amp;utm_campaign=storiesfromnpr"], ["json", "{\"title\":\"Textbook Arbitrage: Making Money Off Used Books\",\"link\":\"http://www.npr.org/blogs/money/2014/11/10/363103753/textbook-arbitrage-making-money-off-used-books?utm_medium=RSS\\u0026amp;utm_campaign=storiesfromnpr\",\"description\":\"Two Planet Money listeners had an idea for how to make money off used textbooks. They gathered a year's worth of data to test their theory.\",\"content_encoded\":\"\\u003Cp\\u003ETwo Planet Money listeners had an idea for how to make money off used textbooks. They gathered a year's worth of data to test their theory.\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=363103753\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2014-11-10T17:08:00-05:00\",\"guid\":\"http://www.npr.org/blogs/money/2014/11/10/363103753/textbook-arbitrage-making-money-off-used-books?utm_medium=RSS\\u0026amp;utm_campaign=storiesfromnpr\",\"dc_creator\":\"David Kestenbaum\"}"], ["link", "http://www.npr.org/blogs/money/2014/11/10/363103753/textbook-arbitrage-making-money-off-used-books?utm_medium=RSS&amp;utm_campaign=storiesfromnpr"], ["published_at", Mon, 10 Nov 2014 22:08:00 UTC +00:00], ["title", "Textbook Arbitrage: Making Money Off Used Books"], ["updated_at", Mon, 10 Nov 2014 22:41:19 UTC +00:00]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 10 Nov 2014 22:41:19 UTC +00:00], ["feed_id", 9], ["guid", "http://www.npr.org/2014/11/10/363049315/for-people-fired-for-being-gay-old-court-case-becomes-a-new-tool?utm_medium=RSS&amp;utm_campaign=storiesfromnpr"], ["json", "{\"title\":\"For People Fired For Being Gay, Old Court Case Becomes A New Tool\",\"link\":\"http://www.npr.org/2014/11/10/363049315/for-people-fired-for-being-gay-old-court-case-becomes-a-new-tool?utm_medium=RSS\\u0026amp;utm_campaign=storiesfromnpr\",\"description\":\"Workplace discrimination against gay people is legal in 29 states. So some LGBT people have filed discrimination claims using a legal argument from a 1989 Supreme Court case about gender stereotypes.\",\"content_encoded\":\"\\u003Cp\\u003EWorkplace discrimination against gay people is legal in 29 states. So some LGBT people have filed discrimination claims using a legal argument from a 1989 Supreme Court case about gender stereotypes.\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=363049315\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2014-11-10T17:06:32-05:00\",\"guid\":\"http://www.npr.org/2014/11/10/363049315/for-people-fired-for-being-gay-old-court-case-becomes-a-new-tool?utm_medium=RSS\\u0026amp;utm_campaign=storiesfromnpr\",\"dc_creator\":\"Miles Bryan\"}"], ["link", "http://www.npr.org/2014/11/10/363049315/for-people-fired-for-being-gay-old-court-case-becomes-a-new-tool?utm_medium=RSS&amp;utm_campaign=storiesfromnpr"], ["published_at", Mon, 10 Nov 2014 22:06:32 UTC +00:00], ["title", "For People Fired For Being Gay, Old Court Case Becomes A New Tool"], ["updated_at", Mon, 10 Nov 2014 22:41:19 UTC +00:00]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Nov 2014 22:41:19 UTC +00:00], ["feed_id", 9], ["guid", "http://www.npr.org/2014/11/10/363101475/anti-isis-satire-lampoons-militant-groups-hypocrisy?utm_medium=RSS&amp;utm_campaign=storiesfromnpr"], ["json", "{\"title\":\"Anti-ISIS Satire Lampoons Militant Group's Hypocrisy\",\"link\":\"http://www.npr.org/2014/11/10/363101475/anti-isis-satire-lampoons-militant-groups-hypocrisy?utm_medium=RSS\\u0026amp;utm_campaign=storiesfromnpr\",\"description\":\"Audie Cornish talks to professor Arwan Kraidy, who studies TV and social media in the Arab world, about the slapstick sketches and music videos that poke fun at ISIS in sometimes bizarre ways.\",\"content_encoded\":\"\\u003Cp\\u003EAudie Cornish talks to professor Arwan Kraidy, who studies TV and social media in the Arab world, about the slapstick sketches and music videos that poke fun at ISIS in sometimes bizarre ways.\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=363101475\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2014-11-10T17:06:00-05:00\",\"guid\":\"http://www.npr.org/2014/11/10/363101475/anti-isis-satire-lampoons-militant-groups-hypocrisy?utm_medium=RSS\\u0026amp;utm_campaign=storiesfromnpr\"}"], ["link", "http://www.npr.org/2014/11/10/363101475/anti-isis-satire-lampoons-militant-groups-hypocrisy?utm_medium=RSS&amp;utm_campaign=storiesfromnpr"], ["published_at", Mon, 10 Nov 2014 22:06:00 UTC +00:00], ["title", "Anti-ISIS Satire Lampoons Militant Group's Hypocrisy"], ["updated_at", Mon, 10 Nov 2014 22:41:19 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 10 Nov 2014 22:41:19 UTC +00:00], ["feed_id", 9], ["guid", "http://www.npr.org/2014/11/10/363101446/secretary-of-embattled-va-i-can-reset-the-tone?utm_medium=RSS&amp;utm_campaign=storiesfromnpr"], ["json", "{\"title\":\"Secretary Of Embattled VA: 'I Can Reset The Tone'\",\"link\":\"http://www.npr.org/2014/11/10/363101446/secretary-of-embattled-va-i-can-reset-the-tone?utm_medium=RSS\\u0026amp;utm_campaign=storiesfromnpr\",\"description\":\"Robert Siegel talks to Veterans Affairs Secretary Robert McDonald about how he's been addressing problems at the agency.\",\"content_encoded\":\"\\u003Cp\\u003ERobert Siegel talks to Veterans Affairs Secretary Robert McDonald about how he's been addressing problems at the agency.\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=363101446\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2014-11-10T16:59:00-05:00\",\"guid\":\"http://www.npr.org/2014/11/10/363101446/secretary-of-embattled-va-i-can-reset-the-tone?utm_medium=RSS\\u0026amp;utm_campaign=storiesfromnpr\"}"], ["link", "http://www.npr.org/2014/11/10/363101446/secretary-of-embattled-va-i-can-reset-the-tone?utm_medium=RSS&amp;utm_campaign=storiesfromnpr"], ["published_at", Mon, 10 Nov 2014 21:59:00 UTC +00:00], ["title", "Secretary Of Embattled VA: 'I Can Reset The Tone'"], ["updated_at", Mon, 10 Nov 2014 22:41:19 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Nov 2014 22:41:19 UTC +00:00], ["feed_id", 9], ["guid", "http://www.npr.org/2014/11/10/363101418/china-trip-a-chance-for-obama-to-distance-himself-from-midterm-losses?utm_medium=RSS&amp;utm_campaign=storiesfromnpr"], ["json", "{\"title\":\"China Trip A Chance For Obama To Distance Himself From Midterm Losses\",\"link\":\"http://www.npr.org/2014/11/10/363101418/china-trip-a-chance-for-obama-to-distance-himself-from-midterm-losses?utm_medium=RSS\\u0026amp;utm_campaign=storiesfromnpr\",\"description\":\"In Asia, President Obama is trying to exert U.S. influence in the region. But will his message be undermined by his political weakness at home?\",\"content_encoded\":\"\\u003Cp\\u003EIn Asia, President Obama is trying to exert U.S. influence in the region. But will his message be undermined by his political weakness at home?\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=363101418\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2014-11-10T16:30:16-05:00\",\"guid\":\"http://www.npr.org/2014/11/10/363101418/china-trip-a-chance-for-obama-to-distance-himself-from-midterm-losses?utm_medium=RSS\\u0026amp;utm_campaign=storiesfromnpr\",\"dc_creator\":\"Scott Horsley\"}"], ["link", "http://www.npr.org/2014/11/10/363101418/china-trip-a-chance-for-obama-to-distance-himself-from-midterm-losses?utm_medium=RSS&amp;utm_campaign=storiesfromnpr"], ["published_at", Mon, 10 Nov 2014 21:30:16 UTC +00:00], ["title", "China Trip A Chance For Obama To Distance Himself From Midterm Losses"], ["updated_at", Mon, 10 Nov 2014 22:41:19 UTC +00:00]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 10 Nov 2014 22:41:19 UTC +00:00], ["feed_id", 9], ["guid", "http://www.npr.org/2014/11/10/363101489/fraught-u-s-russia-relationship-could-undermine-nuclear-security?utm_medium=RSS&amp;utm_campaign=storiesfromnpr"], ["json", "{\"title\":\"Fraught U.S.-Russia Relationship Could Undermine Nuclear Security\",\"link\":\"http://www.npr.org/2014/11/10/363101489/fraught-u-s-russia-relationship-could-undermine-nuclear-security?utm_medium=RSS\\u0026amp;utm_campaign=storiesfromnpr\",\"description\":\"A former head of the Los Alamos National Laboratory has worked with Russia for years on securing loose nukes and upgrading facilities in the former Soviet Union. Siegfried Hecker is now writing a book about two decades of of nuclear cooperation.\",\"content_encoded\":\"\\u003Cp\\u003EA former head of the Los Alamos National Laboratory has worked with Russia for years on securing loose nukes and upgrading facilities in the former Soviet Union. Siegfried Hecker is now writing a book about two decades of of nuclear cooperation.\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=363101489\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2014-11-10T16:30:00-05:00\",\"guid\":\"http://www.npr.org/2014/11/10/363101489/fraught-u-s-russia-relationship-could-undermine-nuclear-security?utm_medium=RSS\\u0026amp;utm_campaign=storiesfromnpr\",\"dc_creator\":\"Michele Kelemen\"}"], ["link", "http://www.npr.org/2014/11/10/363101489/fraught-u-s-russia-relationship-could-undermine-nuclear-security?utm_medium=RSS&amp;utm_campaign=storiesfromnpr"], ["published_at", Mon, 10 Nov 2014 21:30:00 UTC +00:00], ["title", "Fraught U.S.-Russia Relationship Could Undermine Nuclear Security"], ["updated_at", Mon, 10 Nov 2014 22:41:19 UTC +00:00]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Nov 2014 22:41:19 UTC +00:00], ["feed_id", 9], ["guid", "http://www.npr.org/2014/11/10/363101482/obama-backs-net-neutrality-asks-fcc-to-regulate-internet?utm_medium=RSS&amp;utm_campaign=storiesfromnpr"], ["json", "{\"title\":\"Obama Backs Net Neutrality, Asks FCC To Regulate Internet\",\"link\":\"http://www.npr.org/2014/11/10/363101482/obama-backs-net-neutrality-asks-fcc-to-regulate-internet?utm_medium=RSS\\u0026amp;utm_campaign=storiesfromnpr\",\"description\":\"President Obama called on the Federal Communications Commission to craft the \\\"strongest possible rules\\\" to protect the principle of \\\"net neutrality\\\".\",\"content_encoded\":\"\\u003Cp\\u003EPresident Obama called on the Federal Communications Commission to craft the \\\"strongest possible rules\\\" to protect the principle of \\\"net neutrality\\\".\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=363101482\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2014-11-10T16:30:00-05:00\",\"guid\":\"http://www.npr.org/2014/11/10/363101482/obama-backs-net-neutrality-asks-fcc-to-regulate-internet?utm_medium=RSS\\u0026amp;utm_campaign=storiesfromnpr\",\"dc_creator\":\"Joel Rose\"}"], ["link", "http://www.npr.org/2014/11/10/363101482/obama-backs-net-neutrality-asks-fcc-to-regulate-internet?utm_medium=RSS&amp;utm_campaign=storiesfromnpr"], ["published_at", Mon, 10 Nov 2014 21:30:00 UTC +00:00], ["title", "Obama Backs Net Neutrality, Asks FCC To Regulate Internet"], ["updated_at", Mon, 10 Nov 2014 22:41:19 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 10 Nov 2014 22:41:19 UTC +00:00], ["feed_id", 9], ["guid", "http://www.npr.org/2014/11/10/363101439/newly-released-tape-captures-reagan-apology-to-margaret-thatcher?utm_medium=RSS&amp;utm_campaign=storiesfromnpr"], ["json", "{\"title\":\"Newly Released Tape Captures Reagan Apology To Margaret Thatcher\",\"link\":\"http://www.npr.org/2014/11/10/363101439/newly-released-tape-captures-reagan-apology-to-margaret-thatcher?utm_medium=RSS\\u0026amp;utm_campaign=storiesfromnpr\",\"description\":\"Robert Siegel talks with presidential historian James Mann about the recently released tape of President Reagan apologizing to Prime Minister Margaret Thatcher.\",\"content_encoded\":\"\\u003Cp\\u003ERobert Siegel talks with presidential historian James Mann about the recently released tape of President Reagan apologizing to Prime Minister Margaret Thatcher.\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=363101439\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2014-11-10T16:30:00-05:00\",\"guid\":\"http://www.npr.org/2014/11/10/363101439/newly-released-tape-captures-reagan-apology-to-margaret-thatcher?utm_medium=RSS\\u0026amp;utm_campaign=storiesfromnpr\"}"], ["link", "http://www.npr.org/2014/11/10/363101439/newly-released-tape-captures-reagan-apology-to-margaret-thatcher?utm_medium=RSS&amp;utm_campaign=storiesfromnpr"], ["published_at", Mon, 10 Nov 2014 21:30:00 UTC +00:00], ["title", "Newly Released Tape Captures Reagan Apology To Margaret Thatcher"], ["updated_at", Mon, 10 Nov 2014 22:41:19 UTC +00:00]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Nov 2014 22:41:19 UTC +00:00], ["feed_id", 9], ["guid", "http://www.npr.org/2014/11/10/363101432/thousands-of-kids-sickened-by-laundry-pods-that-are-hard-to-resist?utm_medium=RSS&amp;utm_campaign=storiesfromnpr"], ["json", "{\"title\":\"Thousands Of Kids Sickened By Laundry Pods That Are Hard To Resist\",\"link\":\"http://www.npr.org/2014/11/10/363101432/thousands-of-kids-sickened-by-laundry-pods-that-are-hard-to-resist?utm_medium=RSS\\u0026amp;utm_campaign=storiesfromnpr\",\"description\":\"Thousands of kids are being poisoned by ingesting detergent \\\"pods,\\\" those increasingly popular alternatives to liquid detergents. Their colorful packaging and design are apparently hard for a lot of kids to resist.\",\"content_encoded\":\"\\u003Cp\\u003EThousands of kids are being poisoned by ingesting detergent \\\"pods,\\\" those increasingly popular alternatives to liquid detergents. Their colorful packaging and design are apparently hard for a lot of kids to resist.\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=363101432\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2014-11-10T16:30:00-05:00\",\"guid\":\"http://www.npr.org/2014/11/10/363101432/thousands-of-kids-sickened-by-laundry-pods-that-are-hard-to-resist?utm_medium=RSS\\u0026amp;utm_campaign=storiesfromnpr\",\"dc_creator\":\"Rob Stein\"}"], ["link", "http://www.npr.org/2014/11/10/363101432/thousands-of-kids-sickened-by-laundry-pods-that-are-hard-to-resist?utm_medium=RSS&amp;utm_campaign=storiesfromnpr"], ["published_at", Mon, 10 Nov 2014 21:30:00 UTC +00:00], ["title", "Thousands Of Kids Sickened By Laundry Pods That Are Hard To Resist"], ["updated_at", Mon, 10 Nov 2014 22:41:19 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 10 Nov 2014 22:41:19 UTC +00:00], ["feed_id", 9], ["guid", "http://www.npr.org/2014/11/10/363101425/what-makes-valerie-jarrett-different-than-other-presidential-advisors?utm_medium=RSS&amp;utm_campaign=storiesfromnpr"], ["json", "{\"title\":\"What Makes Valerie Jarrett Different Than Other Presidential Advisors?\",\"link\":\"http://www.npr.org/2014/11/10/363101425/what-makes-valerie-jarrett-different-than-other-presidential-advisors?utm_medium=RSS\\u0026amp;utm_campaign=storiesfromnpr\",\"description\":\"Audie Cornish talks to \\u0026lt;em\\u0026gt;The New Republic\\u0026lt;/em\\u0026gt;'s Senior Editor Noam Scheiber about his profile of Valerie Jarrett and her impact on the Obama White House.\",\"content_encoded\":\"\\u003Cp\\u003EAudie Cornish talks to \\u003Cem\\u003EThe New Republic\\u003C/em\\u003E's Senior Editor Noam Scheiber about his profile of Valerie Jarrett and her impact on the Obama White House.\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=363101425\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2014-11-10T16:30:00-05:00\",\"guid\":\"http://www.npr.org/2014/11/10/363101425/what-makes-valerie-jarrett-different-than-other-presidential-advisors?utm_medium=RSS\\u0026amp;utm_campaign=storiesfromnpr\"}"], ["link", "http://www.npr.org/2014/11/10/363101425/what-makes-valerie-jarrett-different-than-other-presidential-advisors?utm_medium=RSS&amp;utm_campaign=storiesfromnpr"], ["published_at", Mon, 10 Nov 2014 21:30:00 UTC +00:00], ["title", "What Makes Valerie Jarrett Different Than Other Presidential Advisors?"], ["updated_at", Mon, 10 Nov 2014 22:41:19 UTC +00:00]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Nov 2014 22:41:19 UTC +00:00], ["feed_id", 9], ["guid", "http://www.npr.org/blogs/alltechconsidered/2014/11/10/363052856/healthcare-govs-tech-improvements-mean-you-can-now-window-shop?utm_medium=RSS&amp;utm_campaign=storiesfromnpr"], ["json", "{\"title\":\"HealthCare.gov's Tech Improvements Mean You Can Now Window Shop\",\"link\":\"http://www.npr.org/blogs/alltechconsidered/2014/11/10/363052856/healthcare-govs-tech-improvements-mean-you-can-now-window-shop?utm_medium=RSS\\u0026amp;utm_campaign=storiesfromnpr\",\"description\":\"After a launch that failed last fall, the administration is hoping this year's open enrollment period goes more smoothly, by letting customers browse first.\",\"content_encoded\":\"\\u003Cp\\u003EAfter a launch that failed last fall, the administration is hoping this year's open enrollment period goes more smoothly, by letting customers browse first.\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=363052856\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2014-11-10T16:30:00-05:00\",\"guid\":\"http://www.npr.org/blogs/alltechconsidered/2014/11/10/363052856/healthcare-govs-tech-improvements-mean-you-can-now-window-shop?utm_medium=RSS\\u0026amp;utm_campaign=storiesfromnpr\",\"dc_creator\":\"Elise Hu\"}"], ["link", "http://www.npr.org/blogs/alltechconsidered/2014/11/10/363052856/healthcare-govs-tech-improvements-mean-you-can-now-window-shop?utm_medium=RSS&amp;utm_campaign=storiesfromnpr"], ["published_at", Mon, 10 Nov 2014 21:30:00 UTC +00:00], ["title", "HealthCare.gov's Tech Improvements Mean You Can Now Window Shop"], ["updated_at", Mon, 10 Nov 2014 22:41:19 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 10 Nov 2014 22:41:19 UTC +00:00], ["feed_id", 9], ["guid", "http://www.npr.org/blogs/health/2014/11/10/361219912/if-the-same-shade-looks-both-yellow-and-gray-whats-color?utm_medium=RSS&amp;utm_campaign=storiesfromnpr"], ["json", "{\"title\":\"These X's Are The Same Shade, So What Does That Say About Color?\",\"link\":\"http://www.npr.org/blogs/health/2014/11/10/361219912/if-the-same-shade-looks-both-yellow-and-gray-whats-color?utm_medium=RSS\\u0026amp;utm_campaign=storiesfromnpr\",\"description\":\"Never mind the physics. Color isn't just a particular wavelength of light, it turns out. It's a fascinating mix of context and what's happening outside and inside your head.\",\"content_encoded\":\"\\u003Cp\\u003ENever mind the physics. Color isn't just a particular wavelength of light, it turns out. It's a fascinating mix of context and what's happening outside and inside your head.\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=361219912\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2014-11-10T16:30:00-05:00\",\"guid\":\"http://www.npr.org/blogs/health/2014/11/10/361219912/if-the-same-shade-looks-both-yellow-and-gray-whats-color?utm_medium=RSS\\u0026amp;utm_campaign=storiesfromnpr\",\"dc_creator\":\"Nell Greenfieldboyce\"}"], ["link", "http://www.npr.org/blogs/health/2014/11/10/361219912/if-the-same-shade-looks-both-yellow-and-gray-whats-color?utm_medium=RSS&amp;utm_campaign=storiesfromnpr"], ["published_at", Mon, 10 Nov 2014 21:30:00 UTC +00:00], ["title", "These X's Are The Same Shade, So What Does That Say About Color?"], ["updated_at", Mon, 10 Nov 2014 22:41:19 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Nov 2014 22:41:19 UTC +00:00], ["feed_id", 9], ["guid", "http://www.npr.org/event/music/362098751/roomful-of-teeth-tiny-desk-concert?utm_medium=RSS&amp;utm_campaign=storiesfromnpr"], ["json", "{\"title\":\"Roomful Of Teeth: Tiny Desk Concert\",\"link\":\"http://www.npr.org/event/music/362098751/roomful-of-teeth-tiny-desk-concert?utm_medium=RSS\\u0026amp;utm_campaign=storiesfromnpr\",\"description\":\"Watch the vocal group sing new music with yelps, yodels and fine harmonies tightly spun.\",\"content_encoded\":\"\\u003Cp\\u003EWatch the vocal group sing new music with yelps, yodels and fine harmonies tightly spun.\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=362098751\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2014-11-10T16:15:00-05:00\",\"guid\":\"http://www.npr.org/event/music/362098751/roomful-of-teeth-tiny-desk-concert?utm_medium=RSS\\u0026amp;utm_campaign=storiesfromnpr\",\"dc_creator\":\"Tom Huizenga\"}"], ["link", "http://www.npr.org/event/music/362098751/roomful-of-teeth-tiny-desk-concert?utm_medium=RSS&amp;utm_campaign=storiesfromnpr"], ["published_at", Mon, 10 Nov 2014 21:15:00 UTC +00:00], ["title", "Roomful Of Teeth: Tiny Desk Concert"], ["updated_at", Mon, 10 Nov 2014 22:41:19 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 10 Nov 2014 22:41:19 UTC +00:00], ["feed_id", 9], ["guid", "http://www.npr.org/blogs/health/2014/11/10/363051060/davita-kidney-dialysis-company-expands-into-the-hospital-business?utm_medium=RSS&amp;utm_campaign=storiesfromnpr"], ["json", "{\"title\":\"Kidney Dialysis Company Expands Into The Hospital Business\",\"link\":\"http://www.npr.org/blogs/health/2014/11/10/363051060/davita-kidney-dialysis-company-expands-into-the-hospital-business?utm_medium=RSS\\u0026amp;utm_campaign=storiesfromnpr\",\"description\":\"DaVita HealthCare partners, a provider of dialysis for kidney patients, says its expertise working with very sick patients can help hospitals expand into wellness and prevention.\",\"content_encoded\":\"\\u003Cp\\u003EDaVita HealthCare partners, a provider of dialysis for kidney patients, says its expertise working with very sick patients can help hospitals expand into wellness and prevention.\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=363051060\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2014-11-10T15:35:00-05:00\",\"guid\":\"http://www.npr.org/blogs/health/2014/11/10/363051060/davita-kidney-dialysis-company-expands-into-the-hospital-business?utm_medium=RSS\\u0026amp;utm_campaign=storiesfromnpr\",\"dc_creator\":\"Eric Whitney\"}"], ["link", "http://www.npr.org/blogs/health/2014/11/10/363051060/davita-kidney-dialysis-company-expands-into-the-hospital-business?utm_medium=RSS&amp;utm_campaign=storiesfromnpr"], ["published_at", Mon, 10 Nov 2014 20:35:00 UTC +00:00], ["title", "Kidney Dialysis Company Expands Into The Hospital Business"], ["updated_at", Mon, 10 Nov 2014 22:41:19 UTC +00:00]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Nov 2014 22:41:19 UTC +00:00], ["feed_id", 9], ["guid", "http://www.npr.org/blogs/parallels/2014/11/10/361155911/why-divers-in-bonaire-are-so-eager-to-kill-the-beautiful-lionfish?utm_medium=RSS&amp;utm_campaign=storiesfromnpr"], ["json", "{\"title\":\"Why Divers In Bonaire Are So Eager To Kill The Beautiful Lionfish\",\"link\":\"http://www.npr.org/blogs/parallels/2014/11/10/361155911/why-divers-in-bonaire-are-so-eager-to-kill-the-beautiful-lionfish?utm_medium=RSS\\u0026amp;utm_campaign=storiesfromnpr\",\"description\":\"Bonaire is a scuba diver's paradise in the Caribbean. But the invasive lionfish is gobbling up smaller fish that protect the reef. The island is now teaching divers how to spear the lionfish.\",\"content_encoded\":\"\\u003Cp\\u003EBonaire is a scuba diver's paradise in the Caribbean. But the invasive lionfish is gobbling up smaller fish that protect the reef. The island is now teaching divers how to spear the lionfish.\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=361155911\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2014-11-10T15:27:00-05:00\",\"guid\":\"http://www.npr.org/blogs/parallels/2014/11/10/361155911/why-divers-in-bonaire-are-so-eager-to-kill-the-beautiful-lionfish?utm_medium=RSS\\u0026amp;utm_campaign=storiesfromnpr\",\"dc_creator\":\"Sean Carberry\"}"], ["link", "http://www.npr.org/blogs/parallels/2014/11/10/361155911/why-divers-in-bonaire-are-so-eager-to-kill-the-beautiful-lionfish?utm_medium=RSS&amp;utm_campaign=storiesfromnpr"], ["published_at", Mon, 10 Nov 2014 20:27:00 UTC +00:00], ["title", "Why Divers In Bonaire Are So Eager To Kill The Beautiful Lionfish"], ["updated_at", Mon, 10 Nov 2014 22:41:19 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Completed 200 OK in 750ms (Views: 0.4ms | ActiveRecord: 36.8ms)
+
+
+Started GET "/api/feeds/9" for 127.0.0.1 at 2014-11-10 17:41:22 -0500
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'keacrrD38-T4zE8PnNou1w' LIMIT 1[0m
+  [1m[35mFeed Load (0.8ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = ? LIMIT 1  [["id", "9"]]
+  [1m[36mEntry Load (0.7ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = ? ORDER BY "entries"."published_at" DESC[0m  [["feed_id", 9]]
+Completed 200 OK in 34ms (Views: 24.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/feeds/8" for 127.0.0.1 at 2014-11-10 17:41:27 -0500
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"8"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'keacrrD38-T4zE8PnNou1w' LIMIT 1
+  [1m[36mFeed Load (0.2ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  [1m[35mEntry Load (0.5ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = ? ORDER BY "entries"."published_at" DESC  [["feed_id", 8]]
+Completed 200 OK in 26ms (Views: 17.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2014-11-10 17:42:12 -0500
+Processing by Api::FeedsController#index as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'keacrrD38-T4zE8PnNou1w' LIMIT 1[0m
+  [1m[35mFeed Load (0.1ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."user_id" = ?  [["user_id", 4]]
+Completed 200 OK in 11ms (Views: 8.2ms | ActiveRecord: 0.5ms)
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from service at /Users/aaron/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-14 14:54:18 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'keacrrD38-T4zE8PnNou1w' LIMIT 1
+  Rendered static_pages/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 213ms (Views: 194.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/jquery.serializejson.min.js?body=1" for 127.0.0.1 at 2014-11-14 14:54:19 -0500
+
+
+Started GET "/assets/moment.js?body=1" for 127.0.0.1 at 2014-11-14 14:54:19 -0500
+
+
+Started GET "/assets/feeds/create.js?body=1" for 127.0.0.1 at 2014-11-14 14:54:19 -0500
+
+
+Started GET "/assets/feeds/_entry.js?body=1" for 127.0.0.1 at 2014-11-14 14:54:19 -0500
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2014-11-14 14:54:19 -0500
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2014-11-14 14:54:19 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-14 14:54:19 -0500
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2014-11-14 14:54:19 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-14 14:54:19 -0500
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2014-11-14 14:54:19 -0500
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2014-11-14 14:54:19 -0500
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2014-11-14 14:54:19 -0500
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2014-11-14 14:54:19 -0500
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2014-11-14 14:54:19 -0500
+
+
+Started GET "/assets/views/entry_show.js?body=1" for 127.0.0.1 at 2014-11-14 14:54:19 -0500
+
+
+Started GET "/assets/views/feed_create.js?body=1" for 127.0.0.1 at 2014-11-14 14:54:19 -0500
+
+
+Started GET "/assets/views/feed_show.js?body=1" for 127.0.0.1 at 2014-11-14 14:54:19 -0500
+
+
+Started GET "/assets/views/feeds_index.js?body=1" for 127.0.0.1 at 2014-11-14 14:54:19 -0500
+
+
+Started GET "/assets/routers/feeds_router.js?body=1" for 127.0.0.1 at 2014-11-14 14:54:19 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-14 14:54:19 -0500
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-11-14 14:54:19 -0500
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2014-11-14 14:54:19 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-14 14:54:19 -0500
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2014-11-14 14:54:19 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-14 14:54:19 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-14 14:54:19 -0500
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2014-11-14 14:54:19 -0500
+Processing by Api::FeedsController#index as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'keacrrD38-T4zE8PnNou1w' LIMIT 1[0m
+  [1m[35mFeed Load (3.7ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."user_id" = ?  [["user_id", 4]]
+Completed 200 OK in 75ms (Views: 12.2ms | ActiveRecord: 4.4ms)
+
+
+Started DELETE "/session" for 127.0.0.1 at 2014-11-14 14:54:31 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"jeMi7ORb2NC290ncOViAdGl26B5Xu1UlmFy5hhDYx/4="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'keacrrD38-T4zE8PnNou1w' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mUPDATE "users" SET "session_token" = ?, "updated_at" = ? WHERE "users"."id" = 4[0m  [["session_token", "P-iKAXafyX6a3msGEJ8S9w"], ["updated_at", Fri, 14 Nov 2014 19:54:31 UTC +00:00]]
+  [1m[35m (1.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/session/new
+Completed 302 Found in 20ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2014-11-14 14:54:31 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2014-11-14 14:54:31 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-14 14:54:31 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-14 14:54:31 -0500
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2014-11-14 14:54:31 -0500
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-11-14 14:54:31 -0500
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2014-11-14 14:54:31 -0500
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2014-11-14 14:54:31 -0500
+Processing by Api::FeedsController#index as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/session/new
+Filter chain halted as :ensure_logged_in rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2014-11-14 14:54:31 -0500
+Processing by SessionsController#new as JSON
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2014-11-14 14:54:38 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2014-11-14 14:54:38 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-14 14:54:38 -0500
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-11-14 14:54:38 -0500
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2014-11-14 14:54:38 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-14 14:54:38 -0500
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2014-11-14 14:54:38 -0500
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2014-11-14 14:54:38 -0500
+Processing by Api::FeedsController#index as JSON
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+Redirected to http://localhost:3000/session/new
+Filter chain halted as :ensure_logged_in rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2014-11-14 14:54:38 -0500
+Processing by SessionsController#new as JSON
+  Rendered sessions/new.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+Completed 200 OK in 22ms (Views: 21.4ms | ActiveRecord: 0.2ms)
